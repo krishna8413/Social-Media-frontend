@@ -1,0 +1,152 @@
+.searchPopUp {
+    /* visibility: hidden; */
+    /* opacity: 0; */
+    /* position: fixed1; */
+    width: 100%;
+    height: 100dvh;
+    position: absolute;
+    top: 6dvh;
+    opacity: 0;
+    /* bottom: 0;
+    left: 0;
+    right: 0; */
+    visibility: hidden;
+    background: rgba(0, 0, 0, 0.8);
+    transition: all 0.6s;
+    /* border: 1px solid red; */
+    /* display: flex;
+    justify-content: center; */
+    /* align-items: center; */
+}
+
+.search {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+}
+
+.SearchField {
+    width: 350px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.8s;
+    transform: translateY(-1000px);
+}
+
+.SearchField input {
+    margin-top: 5px;
+    width: 350px;
+    height: 30px;
+    font-size: 1.2rem;
+    border: none;
+    background: rgb(40, 40, 40);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    outline: none;
+    padding-left: 10px;
+}
+
+.SearchField input::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: #eff1f6bf;
+}
+
+.SearchField input:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #eff1f6bf;
+    opacity: 1;
+}
+
+.SearchField input::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #eff1f6bf;
+    opacity: 1;
+}
+
+.SearchField input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #eff1f6bf;
+}
+
+.SearchField input::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #eff1f6bf;
+}
+
+.SearchField input::placeholder {
+    /* Most modern browsers support this now. */
+    color: #eff1f6bf;
+}
+
+
+.searchResult {
+    margin-top: 3px;
+    padding: 5px;
+    width: 350px;
+    background: rgb(40, 40, 40);
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.searchUserLink {
+    padding: 5px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    /* border-bottom: 2px solid rgb(142, 142, 142); */
+    padding: 10px 0;
+    text-decoration: none;
+}
+
+.searchUserLink:hover {
+    background-color: #ffffff12;
+    border-radius: 5px;
+}
+
+.searchUserPic {
+    margin-left: 15px;
+    height: 3rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.searchUserName {
+    /* border: 1px solid red; */
+    width: 70%;
+    text-align: left;
+    /* line-height: 1; */
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+}
+
+.searchUserName h3 {
+    /* border: 1px solid red; */
+    margin: 0;
+    font-weight: 400;
+}
+
+.searchUserName h4 {
+    margin: 0;
+    font-weight: 400;
+    color: rgb(142, 142, 142);
+}
+
+@media screen and (max-width:400px) {
+    .SearchField {
+        width: 270px;
+    }
+
+    .SearchField input {
+        width: 270px;
+    }
+
+    .searchResult {
+        width: 270px;
+    }
+}
